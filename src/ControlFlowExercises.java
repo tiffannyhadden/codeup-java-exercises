@@ -45,9 +45,7 @@ public class ControlFlowExercises {
 //
 //
 //Refactor the previous two exercises to use a for loop instead.
-        for(int i = 100; i >= -10; i -= 5) {
-            System.out.println( i);
-        }
+//
     }
 }
 
