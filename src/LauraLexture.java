@@ -154,3 +154,48 @@
 //
 //    }
 //}
+////    TODO: create a new method that accepts the name of a basketball
+////     team (ex: the spurs) and returns a String that says
+////     "[basketballTeam] is the best team.". Invoke that method within
+////     your main method (remember to pass in the name of the basketball
+////     team). print out the result of the new method.
+
+//public class LauraLexture {
+//    public static void main(String[] args) {
+//                String basketball = "Spurs";
+//
+//        System.out.print("What is your favorite color: ");
+//    }
+//}
+//            public static void basketballTeam(String s){
+//            String ballTeam = s + " is the best team!";
+//            System.out.println(ballTeam);
+//            counter(ballTeam);
+//        }
+// part 2
+//    TODO: create a new method that accepts the string created from the
+//     first method and returns the number of characters in that string.
+
+//        public static void counter(String str){
+//        System.out.println("With white spaces the number of characters is " + str.length());
+//        int count = 0;
+//        for(int i = 0; i < str.length(); i ++) {
+//            if(str.charAt(i) != ' '){
+//        count++;
+//
+//        }
+//        }
+//        System.out.println("Without white spaces the number of characters is " + count);
+//        }
+//        }
+
+
+//    WARMUP
+//    TODO: prompt a user to tell us about themselves (age, name, if
+//     they have any pets (true/false). Using method overloading, create
+//     methods that will return the first fact they told us about
+//     themselves. ex: I can input: 18 -- Laura -- false in which case I
+//     expect you to return: 18. but if I tell you my name first: Laura --
+//     false -- 18. I expect you to return "Laura" ... etc.
+
+
