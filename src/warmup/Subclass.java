@@ -1,7 +1,7 @@
 package warmup;
 
-public class Subclass {
-    public static void main(String[] args) {
+public class Subclass extends Parent {
+    public static void childPrint(){
         System.out.println("I'm the Subclass");
     }
 }
