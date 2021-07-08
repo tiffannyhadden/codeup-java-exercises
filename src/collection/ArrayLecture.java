@@ -24,7 +24,12 @@ public class ArrayLecture {
             intArray[i] = i + 1;
         }
         return intArray;
-
-
+//// public static int[] getIntArray(int length) {
+//        int[] intArray = new int[length];
+//
+//        for(int i = 0; i < intArray.length; i++) {
+//            intArray[i] = i * 2;
+//        }
+//            return intArray;
     }
 }
