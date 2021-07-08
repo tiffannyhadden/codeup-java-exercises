@@ -2,6 +2,7 @@ package oop;
 
 public class Person {
 
+    public boolean getName;
     // Field
     // private means only members of this class can access these
     private String name;
