@@ -13,14 +13,12 @@ public class Input {
         String message = "hello";
         return message;
     }
-    public boolean yesNo(){
-        System.out.print("Yes or Yes?: ");
-        String answer = scanner.next().toLowerCase();
-        if(answer.equals("y") || answer.equals("yes")){
-            return true;
-        }
-        return false;
+    public boolean yesNo() {
+        System.out.println("Would you like to continue? ");
+        String input = scanner.next();
+        return input.matches("(?i)y|yes|yea|yeah|ya|yep");
     }
+
     public int getInt(int min, int max){
         this.number = getInt();
         if(number < min){
@@ -34,7 +32,13 @@ public class Input {
     }
     public int getInt(){
         System.out.print("Please enter a number: ");
-        int number = scanner.nextInt();
+//        int number = scanner.nextInt();
+        if(scanner.hasNext()) {
+            return scanner.nextInt();
+        } else {
+            System.out.println("please enter a choice between zero and five");
+            getInt();
+        }
         return number;
     }
     public double getDouble(double min, double max){
