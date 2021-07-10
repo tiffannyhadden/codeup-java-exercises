@@ -13,7 +13,6 @@ public class Student {
     }
 
 
-
     public static void main(String[] args) {
 
         Student student = new Student("Amado");
@@ -32,19 +31,19 @@ public class Student {
     }
 
     // returns the student's name
-    public String getName(){
+    public String getName() {
         return this.name;
     }
 
     // adds the given grade to the grades property
-    public void addGrade(int grade){
+    public void addGrade(int grade) {
 
         this.grade.add(grade);
 
     }
 
     // returns the average of the students grades
-    public double getGradeAverage(){
+    public double getGradeAverage() {
 
         double sum = 0;
 
