@@ -10,9 +10,9 @@ public class Input {
         this.doubleNum = doubleNum;
     }
     public String getString(){
-        String message = "hello";
-        return message;
+        return this.scanner.nextLine();
     }
+
     public boolean yesNo() {
         System.out.println("Would you like to continue? ");
         String input = scanner.next();

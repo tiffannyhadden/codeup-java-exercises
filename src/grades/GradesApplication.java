@@ -1,5 +1,7 @@
 package grades;
 
+import util.Input;
+
 import java.util.HashMap;
 
 import java.util.Scanner;
@@ -8,6 +10,7 @@ import java.util.Scanner;
 public class GradesApplication {
 
     public static void main(String[] args) {
+        Input input = new Input();
 
         Student tiff = new Student("tiff");
         tiff.addGrade(78);
@@ -51,18 +54,20 @@ public class GradesApplication {
         // next step ask user for which of the username githubs would you like to know more about.
         // use scanner to get that info
         System.out.println("\n What student would you like to see more information on?");
-        Scanner sc = new Scanner(System.in);
-        String userInput = sc.next();
-        System.out.println(userInput);
+        String userInput = input.getString();
+        Student student = students.get(userInput); // instantiate
         // make if statement if userInput = an existing username then ...
 
         // if the userInput doesn't match a username, then say "hey this username doesn't exist" ,
         // but if the username DOES exist, then give more info (grade and name ) of that student
         // how do you compare the keys in the map to the userinput.
-        if (students.containsKey(userInput)) {
-            System.out.printf("Name: %s Github Username: %s Grades: % Average: %s%n");
+        if (student == null){
+            System.out.printf("\nSorry no student found with that username of " + userInput + ".\n" );
+//            System.out.println(userInput);
         } else {
-            System.out.println("No user with the username of  '" + userInput + "' was found");
+            System.out.printf("\nName: %s - GitHub Username: %s \n", student.getName(), userInput);
+            System.out.printf("\nCurrent Average: %.1f\n", student.getGradeAverage()); // get object and then get method in the student class
+
 
         }
 
