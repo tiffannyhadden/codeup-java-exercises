@@ -59,11 +59,16 @@ public class GradesApplication {
         // if the userInput doesn't match a username, then say "hey this username doesn't exist" ,
         // but if the username DOES exist, then give more info (grade and name ) of that student
         // how do you compare the keys in the map to the userinput.
-        if () {
-
+        if (students.containsKey(userInput)) {
+            System.out.printf("Name: %s Github Username: %s Grades: % Average: %s%n");
         } else {
+            System.out.println("No user with the username of  '" + userInput + "' was found");
 
         }
+
+
+
+
 
 
     }
