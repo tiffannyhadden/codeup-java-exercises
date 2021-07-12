@@ -2,6 +2,8 @@ package grades;
 
 import java.util.HashMap;
 
+import java.util.Scanner;
+
 
 public class GradesApplication {
 
@@ -20,16 +22,16 @@ public class GradesApplication {
         corey.addGrade(70);
 
         Student mitch = new Student("mitch");
-        corey.addGrade(98);
-        corey.addGrade(99);
-        corey.addGrade(100);
-        corey.addGrade(96);
+        mitch.addGrade(98);
+        mitch.addGrade(99);
+        mitch.addGrade(100);
+        mitch.addGrade(96);
 
         Student amado = new Student("amado");
-        corey.addGrade(95);
-        corey.addGrade(97);
-        corey.addGrade(101);
-        corey.addGrade(97);
+        amado.addGrade(95);
+        amado.addGrade(97);
+        amado.addGrade(101);
+        amado.addGrade(97);
 
         HashMap<String, Student> students = new HashMap<String, Student>();
 
@@ -37,10 +39,32 @@ public class GradesApplication {
         students.put("corcor@github.com", corey);
         students.put("mitchy@github.com", mitch);
         students.put("mado@github.com", amado);
+        System.out.println("Welcome!");
+        System.out.println("Here are the GitHub usernames of our students:");
 
 
-        for (String student: students.keySet())
-        System.out.println(student);
+        // this code printing out the usernames
+        for (String student : students.keySet()) {
+            System.out.print(" | " + student + " | ");
+        }
+
+        // next step ask user for which of the username githubs would you like to know more about.
+        // use scanner to get that info
+        System.out.println("\n What student would you like to see more information on?");
+        Scanner sc = new Scanner(System.in);
+        String userInput = sc.next();
+        System.out.println(userInput);
+        // make if statement if userInput = an existing username then ...
+
+        // if the userInput doesn't match a username, then say "hey this username doesn't exist" ,
+        // but if the username DOES exist, then give more info (grade and name ) of that student
+        // how do you compare the keys in the map to the userinput.
+        if () {
+
+        } else {
+
+        }
+
 
     }
 }
