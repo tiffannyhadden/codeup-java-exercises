@@ -12,3 +12,18 @@ public class errorHandling {
         }
     }
 }
+
+// try catch examples explained
+//try { // try some code
+//} catch(Exception e) {
+// handle that exception being thrown
+//}
+//}
+
+// try {
+//  System.out.println("Let's see...");
+//  int result = 1 / 0;
+//  System.out.println("I can divide by zero!");
+//} catch (ArithmeticException myException) {
+//
+
