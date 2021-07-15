@@ -52,3 +52,7 @@ public class FileIO {
         }
     }
 }
+//try{
+// IOUtil.printFileContents(IOUtil.readFromFile(path));
+// { catch (IOException e){
+// System.out.println("Unable to read contents of the the file at: " + path.toAbsolutePath();
