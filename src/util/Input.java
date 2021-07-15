@@ -34,7 +34,7 @@ public class Input {
         System.out.print("Please enter a number: ");
 //        int number = scanner.nextInt();
         if(scanner.hasNext()) {
-            return scanner.nextInt();
+            return getString(); // changed this
         } else {
             System.out.println("please enter a choice between zero and five");
             getInt();
@@ -54,7 +54,7 @@ public class Input {
     }
     public double getDouble(){
 //        System.out.print("Please enter a number with decimals: ");
-        double doubleNum = scanner.nextDouble();
+        double doubleNum = getString(); // changed this
         return doubleNum;
     }
 }
