@@ -64,7 +64,7 @@ public class GradesApplication {
         if (student == null){
             System.out.printf("\nSorry no student found with that username of " + userInput + ".\n" );
 //            System.out.println(userInput);
-//        } else {
+        } else {
             System.out.printf("\nName: %s - GitHub Username: %s \n", student.getName(), userInput);
             System.out.printf("\nCurrent Average: %.1f\n", student.getGradeAverage()); // get object and then get method in the student class
 
